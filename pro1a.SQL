@@ -10,7 +10,7 @@ CREATE TABLE Animation(
 				primary key(Animation_ID),
 				foreign key(Company_Name) references Company,
 				ON DELETE NO ACTION,
-				foreign key(Comic_ID) references Comic,
+				foreign key(Comic_ID) references Comic_Draw_Publish,
 				ON DELETE NO ACTION
 				--ON DELETE NO ACTION 
 )
