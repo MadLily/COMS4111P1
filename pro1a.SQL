@@ -79,7 +79,7 @@ CREATE TABLE Comic_Draw_Publish(
 	Comic_Name 			varchar(255),
 	Cartoonist_ID		int NOT NULL,
 	ISSN				int NOT NULL,
-	PRIMARY KEY (Comic_ID)
+	PRIMARY KEY (Comic_ID),
 	FOREIGN KEY (Cartoonist_ID) REFERENCES Cartoonists,
 	FOREIGN KEY (ISSN) REFERENCES Magazine
 	)
