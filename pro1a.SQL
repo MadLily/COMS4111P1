@@ -75,7 +75,7 @@ CREATE TABLE Cartoonists(
 
 CREATE TABLE Comic_Draw_Publish(
 	Comic_ID 			int,
-	Comic_Description 	varchar(255)
+	Comic_Description 	varchar(255),
 	Comic_Name 			varchar(255),
 	Cartoonist_ID		int NOT NULL,
 	ISSN				int NOT NULL,
