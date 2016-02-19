@@ -13,7 +13,7 @@ CREATE TABLE Animation(
 				foreign key(Comic_ID) references Comic,
 				ON DELETE NO ACTION
 				--ON DELETE NO ACTION 
-);
+)
 
 
 CREATE TABLE Dubbing_Actor(
@@ -23,7 +23,7 @@ CREATE TABLE Dubbing_Actor(
 				Actor_Birthday		char(8),
 				Actor_Age			integer,
 				primary key(Actor_Name, Actor_Birthday)
-);
+)
 
 CREATE TABLE Character(
 				Character_Name 		varchar(255),
@@ -32,7 +32,7 @@ CREATE TABLE Character(
 				primary key(Character_Name, Animation_ID),
 				foreign key(Animation_ID) references Animation,
 				ON DELETE CASCADE
-);
+)
 
 CREATE TABLE Voice(
 				Actor_Name			varchar(255) NOT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE Act(
 				foreign key(Animation_ID) references Animation,
 				foreign key(Actor_Name, Actor_Birthday) references Dubbing_Actor
 
-);
+)
 
 
 CREATE TABLE Magazine(
