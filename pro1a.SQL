@@ -8,9 +8,9 @@ CREATE TABLE Animation(
 				Company_Name	varchar(255) NOT NULL,
 				Comic_ID		int NOT NULL,
 				primary key(Animation_ID),
-				foreign key(Company_Name) references Company,
+				foreign key(Company_Name) references Company
 				ON DELETE NO ACTION,
-				foreign key(Comic_ID) references Comic_Draw_Publish,
+				foreign key(Comic_ID) references Comic_Draw_Publish
 				ON DELETE NO ACTION
 				--ON DELETE NO ACTION 
 )
