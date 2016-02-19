@@ -1,6 +1,6 @@
 CREATE TABLE Animation(
 				Animation_ID	varchar(255), --NOT NULL
-				ATitle			varchar(255),
+				Atitle			varchar(255),
 				Language		varchar(20),
 				Season			integer,
 				Episode			integer,
