@@ -67,7 +67,7 @@ CREATE TABLE Magazine(
 CREATE TABLE Cartoonists(
 	Cartoonist_ID 			int,
 	Cartoonist_Name 		varchar(255) NOT NULL,
-	Date_of Birth 			date,
+	Date_of_Birth 			date,
 	Cartoonist_Gender 		varchar(50),
 	Cartoonist_Description	varchar(255),
 	PRIMARY KEY (Cartoonist_ID)
