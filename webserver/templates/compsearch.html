@@ -1,1 +1,16 @@
 
+{% extends "layout.html" %}
+{% block title %}
+Search By Company
+{% endblock %}
+
+{% block content %}
+    {% for comp in comp_names %}
+    <h4><div>{{comp}}</div></h4>
+    {% endfor %}
+<!-- <form method="POST" action="/animation"> -->
+<form method ="POST" action="/compsearch">
+<p>See the details of an animation, type the name of company here:</p>
+<p> <input type="text" name="comp_name"> <input type="submit" value="query"></p>
+</form>
+{% endblock %}
